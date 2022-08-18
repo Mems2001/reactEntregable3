@@ -1,0 +1,148 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* , *::before , *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  display: flex;
+  gap: 3vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* CLASES */
+
+.mHeader {
+  height: 45vh;
+  width: 100vw;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/410/59/609/rick-and-morty-tv-rick-sanchez-morty-smith-wallpaper-preview.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dim-form {
+  height: 15vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  border: 3px inset grey;
+  border-radius: 3vw;
+  width: 70vw;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+
+.residentsCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.res-btn {
+  height: 5vh;
+  width: 15vw;
+  align-self: center;
+  margin-top: 4vh;
+}
+
+.resCard {
+  box-shadow: 3px 3px 3px 3px black;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.resCard-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-info {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.status-circle {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px
+}
+
+.sc-Dead {
+  background-color: red;
+}
+
+.sc-Alive {
+  background-color: green;
+}
+
+.sc-unknown {
+  background-color: gray;
+}
+
+.cardR-true {
+  display: block;
+}
+
+.cardR-false {
+  display:none;
+}
