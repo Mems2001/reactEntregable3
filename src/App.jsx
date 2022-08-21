@@ -36,7 +36,9 @@ function App() {
   return (
     <div className="App">
 
-    <header className='mHeader'>{`Rick & Morty`}</header>
+    <header className='mHeader'>
+      <span className='tittle'>{`Rick & Morty App`}</span>
+      </header>
 
     <form className='dim-form' onSubmit={handleChange}>
         <label htmlFor='formId'>Enter Id</label>
